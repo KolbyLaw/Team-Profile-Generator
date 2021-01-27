@@ -1,5 +1,8 @@
+// Link to Testing File
 const Employee = require('../lib/Employee.js');
 
+
+// File Tests
 test('Create the Employee Object.', () => {
     const employee = new Employee('Kolby Law', '001', 'klaw@test.com');
 

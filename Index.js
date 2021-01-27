@@ -1,23 +1,26 @@
 // General
 const inquirer = require('inquirer');
 
-// Src Files
+// Src File(s)
+const writeFile = require('./utils/generate-site')
+
+// Util File(s)
 const generatePage = require('./src/page-template');
-const writeFile = require('./src/generate-site')
 
 // Lib Files
-const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+
 let manager = [];
 let engineer = [];
 let intern = [];
+
 let employeeArr = {manager, engineer, intern};
 
 
-// Employee QA Prompt
+// Employee QA Prompt Function
 function Prompt() {
     
     return inquirer
@@ -115,7 +118,7 @@ function Prompt() {
 };
 
 
-
+// Run QA Prompt, Generate Page Info, Write To File
 Prompt()
     .then(teamData => {
         return generatePage(employeeArr)

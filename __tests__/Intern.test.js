@@ -1,7 +1,11 @@
+// Link to Testing File
 const Intern = require('../lib/Intern.js');
 
+
+// File Tests
 test ('Create the Intern Object.', () => {
     const intern = new Intern('Kolby Law', '001', 'klaw@test.com', 'TestSchool');
+
     expect(intern.name).toBe('Kolby Law');
     expect(intern.id).toBe('001');
     expect(intern.email).toBe('klaw@test.com');
@@ -10,6 +14,7 @@ test ('Create the Intern Object.', () => {
 
 test("Get Intern School", () => {
     const intern = new Intern('Kolby Law', '001', 'klaw@test.com', 'TestSchool');
+
     expect(intern.getSchool()).toEqual(expect.stringContaining('TestSchool'));
 });
 
