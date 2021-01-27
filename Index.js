@@ -17,7 +17,7 @@ let manager = [];
 let engineer = [];
 let intern = [];
 
-let employeeArr = {manager, engineer, intern};
+let teamArr = {manager, engineer, intern};
 
 
 // Employee QA Prompt Function
@@ -63,7 +63,7 @@ function Prompt() {
                         type:'confirm',
                         name:'anotherEntry',
                         message: "Would you like to add another employee?",
-                        default: false
+                        default: true
                     }])
                     .then(({office, anotherEntry}) => {
                         manager.push(new Manager(employee, id, email, office))
@@ -84,7 +84,7 @@ function Prompt() {
                         type:'confirm',
                         name:'anotherEntry',
                         message: "Would you like to add another employee?",
-                        default: false
+                        default: true
                     }])
                     .then(({github, anotherEntry}) => {
                         engineer.push(new Engineer(employee, id, email, github))
@@ -105,7 +105,7 @@ function Prompt() {
                         type:'confirm',
                         name:'anotherEntry',
                         message: "Would you like to add another employee?",
-                        default: false
+                        default: true
                     }])
                     .then(({school, anotherEntry}) => {
                         intern.push(new Intern(employee, id, email, school))
@@ -120,8 +120,8 @@ function Prompt() {
 
 // Run QA Prompt, Generate Page Info, Write To File
 Prompt()
-    .then(teamData => {
-        return generatePage(employeeArr)
+    .then(() => {
+        return generatePage(teamArr)
     })
     .then(pageHTML => {
         return writeFile(pageHTML)

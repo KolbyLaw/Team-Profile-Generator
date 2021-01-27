@@ -1,54 +1,38 @@
-## Your Task
+# Team Profile Generator
 
-Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
+## Project Description
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video and add it to the README of your project.
-</br>
+This app was created to easily setup a page whereby a work team, and their occupational information, can be tracked.
+</br></br>
 
-## User Story
+---
 
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
-</br>
+## Table of Contents
 
-## Acceptance Criteria
+- [Installation Instructions](#Installation-Instructions)
+- [Usage Information](#Usage-Information)
+- [Contact](#Contact)
+- [Sneak Peak](#Sneak-Peak)
 
-GIVEN a command-line application that accepts user input
+---
 
-WHEN I am prompted for my team members and their information
+</br></br>
 
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
+## Installation Instructions
 
-WHEN I click on an email address in the HTML
+Make sure you've downloaded NPM, Inquirer, and Jest. The app also utilizes the Bulma CSS framework and Material Icons.
+</br></br>
 
-THEN my default email program opens and populates the TO field of the email with the address
+## Usage Information
 
-WHEN I click on the GitHub username
+Refer to the included video guide for app usage. Alternatively, you can view it [HERE](https://drive.google.com/file/d/15UZjjUobVl4hXdb_KJPWhFA94X5bKBvb/view)!
+</br></br>
 
-THEN that GitHub profile opens in a new tab
+## Contact
 
-WHEN I start the application
+Questions, comments, or concerns regarding this project? Feel free to reach out to me directly via **[email](mailto:kolbytlaw@gmail.com)**, and be sure to take a look at my other work on **[GitHub](https://github.com/kolbylaw)**!
+</br></br>
 
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+## Sneak Peak
 
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-
-WHEN I select the engineer option
-
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-
-WHEN I select the intern option
-
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-
-WHEN I decide to finish building my team
-
-THEN I exit the application, and the HTML is generated
-</br>
-
-## Mock-Up
-
-The following image shows the generated HTML’s appearance and functionality. The styling in the image is just an example, so feel free to add your own styles:
+![image](https://user-images.githubusercontent.com/73139141/105925679-c9af3700-5ffd-11eb-9330-0fbba2134423.png)
